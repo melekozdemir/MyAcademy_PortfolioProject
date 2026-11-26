@@ -1,0 +1,22 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using MyAcademy_PortfolioProject.Context;
+
+namespace MyAcademy_PortfolioProject.Areas.Admin.Controllers
+{
+    [Area("Admin")]
+    public class DashboardController : Controller
+    {
+        private readonly PortfolioContext _context;
+        public DashboardController(PortfolioContext context)
+        {
+            _context = context;
+        }
+        public IActionResult Index()
+        {
+            ViewBag.messageCount = _context.Messages.Count();
+            ViewBag.messageRadByTrueCount = _context.Messages.Where(x => x.IsRead == true).Count();
+            ViewBag.messageRadByFalseCount = _context.Messages.Where(x => x.IsRead == false).Count();
+            return View();
+        }
+    }
+}

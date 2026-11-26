@@ -1,0 +1,79 @@
+﻿<!-- Hero Section -->
+<section id="home">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <!-- Left Content -->
+            <div class="col-lg-7 reveal-on-scroll">
+                <div class="hero-badge">
+                    <i class="bi bi-code-slash badge-icon"></i>
+                    @ViewBag.v1
+                </div>
+
+                <h1 class="hero-title">
+                    Merhaba, Ben <span class="hero-name-gradient"> @ViewBag.v2</span>
+                </h1>
+
+                <!-- Animated Typing Text Slider -->
+                <div class="typing-container" aria-live="polite">
+                    <span id="typedText"></span><span class="typing-cursor"></span>
+                </div>
+
+                <p class="hero-desc">
+                    @ViewBag.v3
+                </p>
+
+                <div class="d-flex flex-wrap gap-3 align-items-center mb-4">
+                    <a href="#projects" class="btn-custom-primary">
+                        <i class="bi bi-grid-fill"></i>
+                        Projelerimi İncele
+                    </a>
+                    <a href="#contact" class="btn-custom-outline">
+                        <i class="bi bi-chat-dots"></i>
+                        Benimle İletişime Geç
+                    </a>
+                </div>
+
+                <!-- Social Links -->
+                <div class="d-flex align-items-center gap-2 pt-2">
+                    <span class="text-secondary small fw-medium me-2">Bağlantılar:</span>
+                    <a href="https://github.com/melekozdemir" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profilim">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/melek-%C3%B6zdemir-915948255/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profilim">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="mailto:mlkozdemir2002@gmail.com" class="social-btn" aria-label="E-posta Gönder">
+                        <i class="bi bi-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Visual with Portrait & Floating Badges -->
+            <div class="col-lg-5 reveal-on-scroll">
+                <div class="hero-image-wrapper">
+                    <!-- Floating badge top left -->
+                    <div class="floating-card float-top-left">
+                        <div class="float-icon-box bg-icon-purple">
+                            <i class="bi bi-code-slash"></i>
+                        </div>
+                    </div>
+
+                    <!-- Main Portrait -->
+                    <div class="hero-image-frame">
+						<img src="/images/ProtfolioResim.png" alt="Melek Özdemir - Bilgisayar Mühendisi" loading="lazy">
+                    </div>
+
+                    <!-- Floating badge bottom right -->
+                    <div class="floating-card float-bottom-right">
+                        <div class="float-icon-box bg-icon-mint">
+                            <i class="bi bi-laptop"></i>
+                        </div>
+                        <div>
+                            <div class="fw-bold small text-dark">Computer Engineer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
